@@ -10,10 +10,10 @@
 namespace Knlv\Slim\Views;
 
 use Slim\Flash\Messages;
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Slim\Views\TwigExtension;
+use Twig\TwigFunction as Twig_SimpleFunction;
 
-class TwigMessages extends Twig_Extension
+class TwigMessages extends TwigExtension implements \Twig\Extension\ExtensionInterface
 {
     /**
      * @var Messages
